@@ -50,7 +50,7 @@ This bs call will add the specified path prefix to any of the following paths. T
 The bs `@path` would be accessible with URL : `/home/random/path`
 
 ### path
-This bs call will match the specified path with the specified handler.
+This bs call will match the specified path with the specified `http.HandlerFunc` function.
 
 	Example: @path > /random/path > form.Handler 
 
