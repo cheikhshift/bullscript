@@ -1,0 +1,20 @@
+
+@i > "fmt"
+@i > "github.com/cheikhshift/form"
+
+
+@prefix > /home
+	@path > /random/path > form.Handler
+	@path > /random/path2 > form.Handler
+@end
+
+@onstart > fmt.Println("Hello monde!")
+
+
+@redirect > 80 > 8090
+
+@listen > 8090
+
+...
+@run> docker tag image:latest gcr.io/app/image:3.2
+@run> gcloud docker -- push gcr.io/app/image:3.2
