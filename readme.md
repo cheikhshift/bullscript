@@ -9,6 +9,10 @@ A command used to process .bs files into Web server source. The essence of this 
 You fill an empty file with .bs calls and then use the command to convert the file into Go.
 BS calls include HTTP request routing, run other commands during build and Go statements to run prior to server launch.
 
+### Command flags
+ 	-path string
+    		path to bull script file
+
 ### BS calls
 
 #### Index
