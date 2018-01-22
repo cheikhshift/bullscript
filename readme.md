@@ -21,18 +21,18 @@ Run a file with a bs call that has no parameters to explain its functionality.
 8. [@run](#run)
 
 
-###onstart
+### onstart
 This bs call will run the specified Go statement on launch.
 		
 	Example : @onstart > gopkg.ExportedFunc("Hey I'm a string")
 
-###i
+### i
 This bs call will import the specified Go package. You may also use custom package names as in a  normal Go file.
 
 	Example : @i > "path.com/gopackage/package"
 	Example 2 : @i > customname "path.com/gopackage/package"
 
-###prefix
+### prefix
 This bs call will add the specified path prefix to any of the following paths. This allows for easy API grouping and loss of redundancy in specifying each path explicitly. The following example will add prefix `/home` to the only sub path. Use bs call `@end`to stop the command from adding the prefix to future paths. 
 
 	Example: 
@@ -42,28 +42,28 @@ This bs call will add the specified path prefix to any of the following paths. T
 
 The bs `@path` would be accessible with URL : `/home/random/path`
 
-###path
+### path
 This bs call will match the specified path with the specified handler.
 
 	Example: @path > /random/path > form.Handler 
 
-###listen
+### listen
 This bs call will specify which port the web application should listen and serve on.
 
 	Example: @listen > 8080
-###listensecure
+### listensecure
 This bs call will specify which port the web application should listen and serve on, as well as the path to your application's TLS files.
 
 Syntax of bs call : `@listensecure > PORT >path_to_certificate_file > path_to_key_file`
 
 	Example: @listensecure > 443 > server.cert > server.key
 
-###redirect
+### redirect
 This bs call will specify which port the specified port should redirect to.
 
 	Example : @redirect > ORIGINAL_PORT > REDIRECT_PORT
 
-###run
+### run
 This bs call will run the specified terminal command.
 
 	Example: @run > echo "Hello world!"
