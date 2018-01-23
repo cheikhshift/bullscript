@@ -118,7 +118,7 @@ func main(){
 
 		if strings.Contains(line, "@path") {
 			if len(bits) < 3 {
-				panic(fmt.Sprintf("Error on line %v. @path requires 2 arguments:\n ie : @path /url/path package.Handler", i + 1))
+				panic(fmt.Sprintf("Error on line %v. @path requires 2 arguments:\n ie : @path > /url/path > package.Handler", i + 1))
 			}
 			hpath := fmt.Sprintf(handlerTemp, prefix, bits[1], bits[2]) 
 			hpath = strings.Replace(hpath,"//","/", -1)
